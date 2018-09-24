@@ -35,7 +35,7 @@ namespace WebApplication1.Tests.Controllers
             ViewResult result = controller.About() as ViewResult;
 
             // Assert
-            Assert.AreEqual("Your application description page.", result.ViewBag.Message);
+            Assert.AreEqual("This test should fail", result.ViewBag.Message);
         }
 
         [TestMethod]
